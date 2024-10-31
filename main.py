@@ -18,9 +18,12 @@ START_BUTTONS = [[
 
 @tamilnetworkcom.on_message(filters.command("start"))
 async def start_com(cilent, message):
-  await message.reply_text("Hi 👋,
-This is An Advanced and yet powerful Bot")
+  await message.reply_text(
+  text= "You have to join channel to used me",
+reply_markup=InilnKeyboardButton(START_BUTTONS)
+  )    
 
+        
 print("Bot was Started")
 
 Tamilnetworkcom.run()                           
