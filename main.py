@@ -1,5 +1,5 @@
 from pyrogram import Cilent, filters
-
+from pyrogram. types import inilnekeyboardMarkup.InilnKeyboardButton
 
 API_ID = "24619371"
 API_HASH = "4418d775c222fa4f61c4c50e56bb5fef"
@@ -11,6 +11,10 @@ Tamilnetworkcom = Cilent(
       api_hash=API_HASH,
       bot_token=BOT_TOKEN,
 ) 
+
+START_BUTTONS = [[
+  InilnKeyboardButton("JOIN NOW ", url="https://t.me/tamilnetworkcom")
+]]
 
 @tamilnetworkcom.on_message(filters.command("start"))
 async def start_com(cilent, message):
